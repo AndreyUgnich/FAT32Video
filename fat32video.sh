@@ -1,5 +1,16 @@
 #!/usr/bin/bash
 
+# Requirements:
+# ffmpeg
+# ffprobe
+# usage: fat32video.sh ./path/to/large-video-file.mkv
+# results: FAT32-ready files:
+# ./path/to/large-video-file.p1.mkv
+# ./path/to/large-video-file.p2.mkv
+# ...
+# ./path/to/large-video-file.pN.mkv
+
+
 f=$1;
 preview_time=10;
 f_path=`dirname "$f"`;
